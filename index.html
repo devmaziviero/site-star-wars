@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Star Wars | Enzo Maziviero</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Adicionando icone-->
+    <link rel="shortcut icon" href="assets/millennium-falcon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <header>
+        <!--Tag Ancora para voltar a home quando clicado no logo-->
+        <a href="index.html">
+            <div class="logo">
+                <img src="assets/star-wars-logo.png" alt="logo" class="logo-img">
+                <span class="logo-texto">Characters</span>
+            </div>
+        </a>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/_maziviero_/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/enzo.maziviero/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://github.com/devmaziviero" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/enzo-maziviero-b90903218/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <h2>Conheca todos os personagens de Star Wars em um so lugar</h2>
+        
+        <div class="main-content" id="main-content"></div>
+        
+        <!--Utilizando a função de hideModal para esconder o modal ao clicar nele novamente-->
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content"> <!--Conteudo do modal -->
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Anterior</button>
+            <button id="next-button" disabled>Proxima</button>
+        </div>
+
+    </div>
+    <footer>
+        <p class="footer-logo">Star Wars Characters</p>
+        <p class="copyright">Desenvolvido por &copy; Enzo Maziviero </p>
+    </footer>
+
+    <!--Usando no body para carregar junto com os elementos-->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/540e5cf7d1.js" crossorigin="anonymous"></script>
+</body>
+</html>
